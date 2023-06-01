@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="ink" class="com.it.Ink.BlackInk" />
+
+	<bean id="fountainPen" class="com.it.Writer.FountainPen">
+		<property name="ink" ref="ink"></property>
+	</bean>
+
+	<bean id="writer" class="com.it.Writer.Writer">
+		<property name="pen" ref="fountainPen"></property>
+	</bean>
+
+
+
+
+
+</beans>
