@@ -11,6 +11,7 @@ public class Runner {
 		ApplicationContext context = new ClassPathXmlApplicationContext("Const-arg.xml");
 		Writer writer = (Writer) context.getBean("writer");
 		writer.write();
+		writer.write();
 
 	}
 
